@@ -23,20 +23,21 @@ function fetchJSONData() {
 	})
     .then((data) => {
 		rs =  '<div class="row">';
-        for(i=0;i<data.length;i++) {              
-			rs += '<div class="card" style="width: 18rem;">';
-			rs += ' <img src="images/' + data[i].adventurephoto + '" class="card-img-top" alt="activity">';
-			rs += '    <div class="card-body">'
-			rs += '     <h5 class="card-title">' + data[i].adventurename + '</h5>';
-			rs += '     <p class="card-text">' + data[i].adventuredate + '</p>';
-			rs += '   <p>' + data[i].customername + '</p>';
-			rs += '   <p>' + data[i].customerquote + '</p>';
-			rs += '   <p>' + data[i].excurstionstmt + '</p>';
-			rs += '   <p>' + data[i].descriptionfile + '</p>';
-			rs += '   <a href="contacts" class"btn btn-primary">Go somewhere</a>';
-			rs += '  </div>';
-			rs += '  </div>';
-			rs += '</div>';
+        for(i=0;i<data.length;i++) {    
+        	rs += '<div class="col-md-3">';         
+			rs += '		<div class="card" style="width: 18rem;">';
+			rs += ' 		<img src="images/' + data[i].adventurephoto + '" class="card-img-top" alt="activity">';
+			rs += '			<div class="card-body">'
+			rs += '				<h5 class="card-title">' + data[i].adventurename + '</h5>';
+			rs += '				<p class="card-text">' + data[i].adventuredate + '</p>';
+			rs += '				<p>' + data[i].customername + '</p>';
+			rs += '				<p>' + data[i].customerquote + '</p>';
+			rs += '				<p>' + data[i].excurstionstmt + '</p>';
+			rs += ' 			<p>' + data[i].descriptionfile + '</p>';
+			rs += '				<a href="contacts" class"btn btn-primary">Go somewhere</a>';
+			rs += '  		</div>';
+			rs += '		</div>';
+			rs += '</div>';  
 		}
 		rs += '</div>';
 		document.getElementById("recordset").innerHTML = rs;
