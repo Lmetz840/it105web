@@ -14,7 +14,7 @@
     <div id="recordset"></div>
          <script>
 function fetchJSONData() {
-	fetch("Customer.json").then((res) => {
+	fetch("./Customer.json").then((res) => {
 		if (!res.ok) {
 			throw new Error(`HTTP error! Status: ${res.status}`);
         }
