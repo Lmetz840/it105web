@@ -1,0 +1,17 @@
+<Beverages>
+    <beverage>
+        <bname>Cappuccino</bname>
+        <bcomp>Steamed beans with frothed milk</bcomp>
+        <bcategory>Coffee Drink</bcategory>
+    </beverage>
+    <beverage>
+        <bname>Espresso</bname>
+        <bcomp>Steamed beans</bcomp>
+        <bcategory>Coffee Drink</bcategory>
+    </beverage>
+    <beverage>
+        <bname>Latte</bname>
+        <bcomp>Steamed beans with milk</bcomp>
+        <bcategory>Coffee Drink</bcategory>
+    </beverage>
+</Beverages>
